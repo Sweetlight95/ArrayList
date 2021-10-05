@@ -44,13 +44,15 @@ class ArrayListTest {
     @Test
     void addOneElement_ArrayListSizeIsOne(){
         myArrayList.add(34);
-        assertEquals(2, myArrayList.size());
+        assertEquals(1, myArrayList.size());
     }
-    @Test
-    void replaceElementInArratList(){
-        myArrayList.add();
-        myArrayList.add(94, );
-    }
+//    @Test
+//    void replaceElementInArratList(){
+//        myArrayList.add(34);
+//        myArrayList.add(32);
+//        myArrayList.add(99);
+//        assertEquals(32, myArrayList)
+//    }
     @Test
     void addThreeElement_getSecondByIndex(){
         myArrayList.add(34);
@@ -76,10 +78,10 @@ class ArrayListTest {
         myArrayList.add(99);
         myArrayList.add(45);
         assertEquals(6, myArrayList.getCapacity());
-        assertEquals(5, myArrayList.getCapacity());
+        assertEquals(5, myArrayList.size());
         myArrayList.add(43);
         myArrayList.add(21);
-        assertEquals(21, myArrayList.getCapacity());
-        assertEquals(7, myArrayList.getCapacity());
+        assertEquals(12, myArrayList.getCapacity());
+        assertEquals(7, myArrayList.size());
     }
 }

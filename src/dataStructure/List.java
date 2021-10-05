@@ -7,7 +7,7 @@ public interface List {
 
     void remove(int element);
 
-    void size(int element);
+    int size();
 
     int get(int position);
 

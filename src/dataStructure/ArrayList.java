@@ -29,13 +29,11 @@ public class ArrayList implements List {
     public void add(int element, int position){
         elements[position] = element;
     }
-        public void remove(int element){
-        size--;
-    }
-
-    @Override
-    public void size(int element) {
-
+//        public void remove(int element){
+//        size--;
+//    }
+    public int size() {
+        return size;
     }
 
     public void remove(int element) {
@@ -56,6 +54,6 @@ public class ArrayList implements List {
 
     @Override
     public int getCapacity() {
-        return 0;
+        return elements.length;
     }
 }
